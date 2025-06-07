@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the jar file into the container
-COPY car-service/target/car-service-*.jar car-service.jar
+COPY target/car-service*.jar car-service.jar
 
 # Expose the application port (optional)
 EXPOSE 8080
