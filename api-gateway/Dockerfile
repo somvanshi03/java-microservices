@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the jar file into the container
-COPY api-gateway/target/api-gateway-*.jar api-gateway.jar
+COPY target/api-gateway-*.jar api-gateway.jar
 
 # Expose the application port (optional)
 EXPOSE 8080
