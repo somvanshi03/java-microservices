@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the jar file into the container
-COPY discovery-service/target/discovery-service*.jar discovery-service.jar
+COPY target/discovery-service*.jar discovery-service.jar
 
 # Expose the application port (optional)
 EXPOSE 8080
