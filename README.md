@@ -20,11 +20,15 @@ cd java-microservices/
 ```
 
 apt update -y 
+
 apt install openjdk-11-jdk maven docker -y
 
 docker build -t mridul08/api-gateway:v1 api-gateway/
+
 docker build -t mridul08/car-service:v1 car-service/
+
 docker build -t mridul08/discovery-service:v1 discovery-service/
+
 docker images
 
 
