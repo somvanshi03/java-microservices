@@ -15,9 +15,18 @@ This example is built with Spring Cloud Gateway and Spring WebFlux to show react
 To install this example, run the following commands:
 
 ```bash
-git clone https://github.com/oktadev/java-microservices-examples.git
-cd java-microservices-examples/spring-cloud-gateway
+git clone https://github.com/oktadev/java-microservices.git
+cd java-microservices/
 ```
+
+apt update -y 
+apt install openjdk-11-jdk maven docker -y
+
+docker build -t mridul08/api-gateway:v1 api-gateway/
+docker build -t mridul08/car-service:v1 car-service/
+docker build -t mridul08/discovery-service:v1 discovery-service/
+docker images
+
 
 The `api-gateway` and `car-service` projects are already pre-configured to be locked down with OAuth 2.0 and Okta. That means if you try to run them, you won't be able to login until you create an account, and an application in it.
 
