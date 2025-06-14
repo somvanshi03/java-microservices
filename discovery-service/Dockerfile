@@ -11,4 +11,4 @@ COPY target/discovery-service*.jar discovery-service.jar
 EXPOSE 8080
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "discovery-service.jar"
+ENTRYPOINT ["java", "-jar", "discovery-service.jar"]
