@@ -11,4 +11,4 @@ COPY target/api-gateway*.jar api-gateway.jar
 EXPOSE 8080
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "api-gateway.jar"
+ENTRYPOINT ["java", "-jar", "api-gateway.jar"]
